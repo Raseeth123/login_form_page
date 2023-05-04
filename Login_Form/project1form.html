@@ -1,0 +1,49 @@
+<html>
+    <head>
+                <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                <link rel="stylesheet" href="project1form.css">
+                <meta charset="utf-8">
+        <title>www.regform.html</title>
+    </head>
+    <body>
+        <main>
+        <div>
+            <h1>Login Form</h1>
+            <fieldset>
+                <label for="name">Enter Your Name</label><input type="text" id="name" name="name" required placeholder="Enter your name"/>
+           </fieldset>
+           <fieldset>
+                <label for="email">Enter Your Email-ID</label><input type="email" name="email" id="email" required placeholder="Enter your email">
+           </fieldset>
+           <fieldset>
+               <label for="age">Enter Your Age</label><input type="number" name="age" id="age" min="18" max="100" placeholder="age">
+           </fieldset>
+           <fieldset>
+               <label for="password">Create your password</label><input type="password" id="password" name="password" pattern="[a-z0-5]{0,}" placeholder="Create Your Password">
+           </fieldset>
+           <fieldset>
+            <label for="languages">Select your language</label>
+            <select id="languages" name="languages" >
+                <option value="">English</option>
+                <option value="1">Tamil</option>
+                <option value="2">Hindi</option>
+                <option value="3">Others</option>
+            </select>
+       </fieldset>
+       <fieldset>
+            <input type="radio" id="personal-account" name="account" value="Personal Account"/><label for="personal-account">Personal Account</label>
+            <input type="radio" id="private-account" name="account" value="Private Account"/><label for="private-account">Private Account</label>
+       </fieldset>   
+       <fieldset>
+            <p>will you prefer this website to others?</p>
+            <input type="checkbox" name="feedback" value="Yes" id="yes"><label for="yes">Yes</label>
+            <input type="checkbox" name="feedback" value="No" id="no"><label for="no">No</label>
+       </fieldset>
+       <fieldset>
+           <label for="bio">Provide your feedback:</label><textarea id="bio" value="bio" name="bio" rows="3" cols="12" placeholder="Enter Your Feedback"></textarea>
+       </fieldset>
+       <button type="submit">SUBMIT</button>
+        </div>
+        </main>
+    </body>
+</html>
